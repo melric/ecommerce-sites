@@ -1,0 +1,484 @@
+// MIN Width =============================================
+@media only screen and (min-width: 1360px)
+  html
+    body
+      .hero-banner__content
+        width: 50rem
+
+@media only screen and (min-width: 1340px)
+  html
+    body
+      .hero-banner
+        .hero-banner__content
+          width: 40rem
+
+@media only screen and (min-width:768px)
+    html
+      body
+        .hero-banner
+          .hero-banner__content
+            width: 60rem
+            margin: -11px auto 0 auto
+
+        .mo-nav
+          display: none
+
+
+
+// MAX Width ================================================
+@media only screen and (max-width: 1440px)
+  html
+    font-size: .7rem
+    .md-hero__title
+      font-size: 3rem
+    .md-hero__subtitle
+      font-size: 1.3rem
+
+    .secondary-btn
+      font-size: 1.3rem
+      width: auto
+      line-height: 2rem
+
+    .logo-box
+      width: 13rem
+
+    .onscrollnav .signin-create-box
+      top: 11px
+      right: 110px
+
+    .onscrollnav .search-bar .search-icon
+      width: 2.1rem
+
+    .onscrollnav .nav-bttm
+      top: 3.2rem
+      
+@media only screen and (max-width: 1200px)
+  html
+    body
+      .category__holder
+        .category__holder--list
+          flex-basis: 33%
+
+      .selectbox .selectbox-btn
+        padding: 1rem 4rem 1rem 2rem
+        font-size: 1em
+
+@media only screen and (max-width: 956px)
+  html
+    body
+      .category__holder
+        .category__holder--list
+          flex-basis: 50%
+
+      // category filter
+      .fs-holer
+        visibility: visible
+        opacity: 1
+        height: 100%
+        width: 100%
+        .filter-btn
+          font-family: 'gothammedium'
+          font-size: 1.7rem
+          padding: 2rem 5rem 2rem 3rem
+          &::before
+            height: 20px
+            width: 20px
+        .sort-btn
+          font-family: 'gothammedium'
+          font-size: 1.7rem
+          padding: 2rem 5rem 2rem 3rem
+          &::before
+            height: 20px
+            width: 20px
+
+      .md-flexbox__row
+        flex-direction: column
+      .categody-wrap__left
+        width: 100%
+        .filter-holder
+          width: 100%
+          display: block
+          .selectbox__option
+            position: inherit
+            overflow-y: unset
+            min-height: auto
+            max-height: 100%
+            li
+              font-size: 1.7rem
+              padding: 2rem 0.5rem
+      .selectbox 
+        width: 100%
+        margin: 0
+        .md-right
+          left: 0
+        .selectbox-btn
+          width: 100%
+          font-family: 'gothammedium'
+          padding: 2rem 5rem 2rem 3rem
+          font-size: 1.7rem
+          
+          &::before
+            height: 20px
+            width: 19px
+        .selectbox-btn__active
+          position: inherit
+      .categody-wrap__right
+        width: 100%
+        .selectbox__option 
+          position: inherit
+          overflow-y: unset
+          min-height: auto
+          li
+            font-size: 1.7rem
+            padding: 2rem 0.5rem
+
+@media only screen and (max-width: 1080px)
+  // Style for Mobile View
+  html
+    body
+      .ResultSlider .slick-next, .ResultSlider .slick-prev
+        display: none !important
+      .main-result-holder .slick-slider
+        padding: 0px
+      .hero-banner
+        margin-top: 0px
+        .white-btn
+          margin-top: 30px
+      .nav
+        position: relative
+        width: 100%
+      .onscrollnav
+        .lang-mobile
+            display: none 
+      .burger-menu
+        display: block
+        left: -4px
+      .lang-mobile
+        display: none
+      .search-txt
+        display: none
+      .cart-text
+        display: none
+      .user-txt
+        display: none
+      .nav-bttm
+        display: none
+      .cart-box
+        top: 1.5rem
+        right: 2rem
+        width: auto
+      .logo-box
+        width: 20rem
+      .search-bar
+        position: absolute
+        right: 5rem
+        top: 1.5rem
+        .search-icon
+          width: 3rem
+          height: 2.5rem
+      .signin-create-box
+        position: absolute
+        left: 7rem
+        top: 1rem
+        .user-icon
+          width: 3.4rem
+      .nav
+        .nav-top
+          padding: 1.5rem 2.5rem 1.5rem 2.5rem
+
+      .container__top-space
+        padding-top: 0rem
+
+      .fullwidth-mobile
+        display: block
+        flex: 100%
+
+      .onscrollnav .nav-bttm .nav-menu ul li
+        padding: 0 1rem 30px 1rem
+        font-size: .7rem
+
+      .modalsearch
+        padding: 1rem 10rem
+
+
+@media only screen and (max-width: 800px)
+  html
+    body
+      .vid-case
+        padding-right: 0px !important
+      .hero__container
+        grid-template-columns: 1fr 68%
+      .md-flexbox
+        flex-direction: column
+      .secondary-btn
+        font-size: 1.3rem
+        width: auto
+        line-height: 2rem
+        margin: 30px auto 0 auto
+      .logo-box
+        width: 16rem
+      .md-box__left--hide
+        display: none
+      .category__holder
+        .category__holder--list
+          flex-basis: 50%
+
+
+@media only screen and (max-width: 768px)
+    html
+      body
+
+        // Share Block
+        .share-block
+          flex-direction: column
+
+        // SLick Slider
+        .slick-slider
+          padding: 0 4rem
+
+        .carousel-main .slick-next
+          right: 8px
+        .carousel-main .slick-prev
+          left: 0px
+
+        .hero-banner
+          display: flex
+          justify-content: center
+
+          .hero-banner__content
+            display: flex
+            margin: 0 auto
+            position: absolute
+            right: unset
+            top: 17%
+            width: 100%
+            flex-direction: column
+            margin: -11px auto 0 auto
+
+        .hero-banner__category
+          display: block
+          .hero-banner__content-m
+            width: 100%
+            margin-top: 4rem
+            h1
+              font-size: 4rem
+              font-weight: bold
+              text-align: center
+            p
+              font-size: 2rem
+              text-align: center
+              line-height: 3rem
+              letter-spacing: 0
+
+        .product-container
+          padding: 0 2rem
+
+        .md-hero__subtitle
+          font-size: 1.3rem
+          padding: 0 2rem
+
+        .primary-btn
+          font-size: 1.3rem
+          width: 227px
+          line-height: 8rem
+          margin: 30px auto 0 auto
+        
+        .btn-lineheight
+          line-height: 2rem
+
+        .addtocart-btn
+          letter-spacing: 0
+
+        .carousel-main div .cont-holder__lft .wishlist-btn
+          margin-left: 0px
+
+        .signup-block
+          margin-top: 3rem
+
+        .wrapper
+          padding: 0 2rem
+
+        .footer__flexy
+          flex-direction: column
+
+        .footer__copyright .footer__flexy .footer__copyright--left
+            width: 100%
+            .footer__info
+              text-align: left
+
+        .footer__copyright .footer__flexy .footer__copyright--right
+          width: 100%
+          text-align: left
+          margin-top: 3rem
+
+          .footer-logo
+            text-align: left
+
+          .social-links ul li
+            margin: 0 2rem 0 0
+
+        .modalsearch
+          padding: 3rem 2rem
+
+        .signin-create-box
+          left: 6rem
+        .search-bar
+          right: 4rem
+
+        .accordon-container
+          display: block    
+        
+        .signup-block .signup-block__content
+          top: 15%
+
+        .prevnext-case
+          flex-direction: column
+          button
+            margin-bottom: 3rem
+
+      // PDP Style
+      .pdp-wrapper
+        .pdp-wrapper
+          float: none
+          width: 100%
+        .pdp-images
+          float: none
+          width: 100%
+        .pdp-content
+          float: none
+          width: 100%
+          margin-top: 5rem
+          .pdp-title, .pdp-subtitle
+            text-align: center
+          .reviews-and-price
+            display: flex
+            justify-content: center
+
+        
+        // Review Section
+        .review-summary-md
+          flex-direction: column
+          .dirctn-column-m
+            flex-direction: column
+
+          .review-summary__lt
+            width: 100%
+            .listoff
+              display: none
+          .review-summary__rt
+            width: 100%
+            .rs-inner-lt
+              width: 100%
+            .rs-inner-rt
+              width: 100%
+              margin-top: 1rem
+              .bars-holder
+                width: 100%
+
+          .feedback-vote-request
+            margin-top: 3rem
+          
+        // PDP image thumb arrow
+        .pdpImageSlider .slick-next
+          right: 0px
+        .pdpImageSlider .slick-prev
+          left: -5px
+      
+      // contact social
+      .contact-holder
+        ul
+          flex-direction: column
+          padding-bottom: 7rem
+          li
+            .contact-dtl
+              padding: 7rem 4rem 0rem 4rem
+
+
+@media only screen and (max-width: 640px)
+  html
+    body
+      .category__holder
+        .category__holder--list
+          flex-basis: 100%
+      .howtoapply-holder
+        flex-direction: column
+      
+
+@media only screen and (max-width:520px)
+  html
+    body
+      .pdp-wrapper .pdp-images .pdp-images__thumbnail ul li
+        height: 80px
+      .slick-dots
+        bottom: 328px !important
+      .main-result-holder .before-txt, .main-result-holder .after-txt
+        bottom: 325px
+
+      .md-box__center
+        flex-direction: column
+      .addtocart-spacing
+        margin: 70px 0px 30px 0px
+
+      .md-hero__title
+        font-size: 2.1rem
+
+      h2
+        font-size: 1.6rem
+
+      .dscptn_blck
+        padding: 0 2rem
+
+      .footer-holder
+        flex-direction: column
+        .md-box__left
+          .md-box
+            padding: 1.2rem 2rem
+          h4
+            padding-top: 0
+
+      .modalsearch
+        form
+          .modalsearch_btn
+            img
+              width: 3.2rem
+          .modalsearch_close
+            img
+              width: 2rem
+
+      .signup-block__stip--text
+        font-size: 1.4rem
+
+      .carousel-main .slick-next
+        right: 0px
+
+      .signup-block .signup-block__content
+        width: 100%
+        right: 0
+        top: 15%
+        padding: 0 2rem
+
+      .hero-banner
+        .hero-banner__content
+          top: 17%
+
+      #footer
+        padding: 3rem 0 1rem 0
+
+
+    
+@media only screen and (max-width:375px)
+  html
+    body
+      .slick-dots
+        bottom: 358px !important
+      .main-result-holder .before-txt, .main-result-holder .after-txt
+        bottom: 358px
+
+
+@media only screen and (max-width:320px)
+  html
+    body
+      .slick-dots
+        bottom: 390px !important
+      .main-result-holder .before-txt, .main-result-holder .after-txt
+        bottom: 390px

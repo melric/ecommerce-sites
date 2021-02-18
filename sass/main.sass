@@ -1,0 +1,2154 @@
+/* Imports */
+@import "_media-queries"
+@import "reset.css"
+@import "_variables"
+@import "_mixins"
+@import "_fonts"
+
+/* Generic Styles */
+::selection
+   background: #f97d41
+   color: $lightColor
+
+html
+   scroll-behavior: smooth
+
+body
+   font-family: $fontStack
+   font-size: 12px
+   letter-spacing: 0.050em
+   line-height: 1.5rem
+   color: $headerTextColor
+
+/* Layout Styles */
+.container
+   max-width: 100%
+   width: 100%
+
+.container__top-space
+   padding-top: 8rem
+
+.wrapper
+   padding: 0 6rem
+
+.product-container
+   padding: 0 5.1rem
+
+.inner-wrap
+   padding: 3rem 3rem 2rem 3rem
+
+.md-flexbox
+   @include flexy
+   @include flexJustifyContentCenter
+   @include flexAlignItemsCenter
+
+.rb-flexbox
+   @include flexy
+   @include flexJustifyContentCenter
+   @include flexAlignItemsCenter
+
+.footer-holder
+   @include flexy
+   flex-wrap: wrap
+
+.md-box
+   padding: 2rem
+
+.md-box__left
+   flex: 1
+   @include flexy
+   @include flexJustifyContentStart
+   @include flexDirectionColumn
+
+.md-box__center
+   flex: 1
+   @include flexy
+   @include flexJustifyContentCenter
+   position: relative
+   width: 100%
+   max-width: 100vw
+
+.product-add-to-cart
+   flex: 1
+   @include flexy
+   @include flexJustifyContentCenter
+   position: relative
+   width: 100%
+   max-width: 100vw
+   
+.md-box__right
+   flex: 1
+   @include flexy
+   @include flexJustifyContentEnd
+
+.category-wrap
+   padding: 3rem 0 5rem 0
+
+
+
+/* Color */
+.white-text
+   color: $lightColor !important
+.dblue-txt
+   color: $darkTextColor
+.text-link
+   border-bottom: 2px solid $darkTextColor
+   font-family: $subTitleFont
+   font-size: 22px
+   font-weight: 800
+   color: $darkColor
+.blue-font
+   color: $navyBlue
+   font-family: $subTitleFont
+.bnr-sub-copy
+   color: $secondaryColor
+   font-size: 22px
+   line-height: 2
+   padding: 10px 0 0px 0
+   display: block
+
+/* Font Styles */
+.title-wrap
+   padding: 10rem 0 2rem 0
+
+.md-hero__title
+   font-family: $fontStack
+   color: $headerTextColor
+   font-size: 3rem
+   line-height: normal
+   margin-bottom: .50rem
+   padding: 0 2rem 1rem
+
+.md-hero__subtitle
+   font-family: $fontStack
+   color: $headerTextColor
+   font-size: 1.6rem
+   line-height: normal
+   padding: 0 10rem
+
+.md-hero__subtitle--sub
+   font-family: $fontStack
+   color: $headerTextColor
+   font-size: 1rem
+   line-height: 1.5rem
+   padding: 0 2.1rem
+   text-align: left
+
+p
+   line-height: normal
+
+hr
+   margin: 1.5rem 0
+   display: block
+   height: 1px
+   border: 0
+   border-top: 1px solid #ccc
+   padding: 0
+
+h2
+   font-family: $fontStack
+   color: $headerTextColor
+   line-height: normal
+   font-size: 2rem
+
+h3
+   font-family: $subTitleFont
+   color: $lightColor
+   font-size: 2rem
+   line-height: normal
+
+h4
+   font-family: $titleFont
+   color: $headerTextColor
+   font-weight: 700
+   line-height: normal
+   font-size: 1.3rem
+
+h5
+   font-family: $fontStack
+   color: $headerTextColor
+   line-height: normal
+   font-size: 1.3rem
+   margin-bottom: .5rem
+
+.signup-block__content--title
+   font-family: $subTitleFont
+   color: $headerTextColor
+   line-height: normal
+   font-size: 2rem
+
+.signup-block__stip--text
+   font-family: $subTitleFont
+   color: $headerTextColor
+   line-height: normal
+   font-weight: 500
+   font-size: 2rem
+   transition: color .3s
+   &:hover
+      color: $textLink
+
+.uppercase-font
+   text-transform: uppercase
+
+.italic-font
+   font-family: $bodyFontitalic
+
+.bold-font
+   font-family: $titleFont
+
+.txt-center
+   text-align: center
+
+.txt-align-left
+   text-align: left
+
+.bodyfont 
+   font-family: $fontStack
+   color: $headerTextColor
+   font-size: 1rem !important
+   line-height: 1.5rem
+
+.product-title
+   font-family: $fontStack
+   font-size: 1.3rem
+   text-transform: uppercase
+   font-weight: 700
+   color: $headerTextColor
+
+.product-title__tag
+   font-family: $fontStack
+   font-size: 1.2rem
+   text-transform: uppercase
+   font-weight: 500
+   font-style: italic
+   color: $headerTextColor
+
+.product-desc
+   font-family: $fontStack
+   font-size: 1.3rem
+   font-weight: 500
+   color: $headerTextColor
+
+.f-link-list
+   padding-top: 1rem
+   li
+      font-family: $fontStack
+      font-size: 1.2rem
+      font-weight: 400
+      color: $headerTextColor
+      line-height: 2rem
+      transition: color .3s
+      a
+         color: $headerTextColor
+         &:hover
+            color: $textLink
+
+sup
+   font-size: 60%
+   line-height: 0
+   position: relative
+   vertical-align: baseline
+   top: -0.8em
+   left: -0.1em
+
+.ellipsis
+   text-overflow: ellipsis
+   white-space: nowrap
+   overflow: hidden
+
+.bottom-space
+   margin-bottom: 6rem
+
+
+// Buttons Styles
+.reg-btn
+   background: transparent
+   font-family: $titleFont
+   font-size: 1em
+   font-weight: 500
+   color: $secondaryColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   border: 0.1875rem solid $secondaryColor
+   padding: .6rem 1rem
+   width: auto
+   transition: background .2s 
+   cursor: pointer
+   &:hover
+      background-color: $secondaryColor
+      color: $LinkbgHover 
+
+.white-btn
+   font-family: $fontStack
+   font-size: 2em
+   line-height: 11rem
+   font-weight: 500
+   color: $lightColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   border: 0.1875rem solid $lightColor
+   padding: 1.5rem 3.5rem
+   width: auto
+   transition: background .2s 
+   &:hover
+      background-color: $lightColor
+      color: $darkColor
+
+.primary-btn
+   font-family: $fontStack
+   font-size: 2em
+   line-height: 11rem
+   font-weight: 500
+   color: $secondaryColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   border: 0.1875rem solid $secondaryColor
+   padding: 1.5rem 3.5rem
+   width: auto
+   transition: background .2s 
+   &:hover
+      background-color: $secondaryColor
+      color: $LinkbgHover 
+
+.secondary-btn
+   font-family: $fontStack
+   font-size: 2em
+   line-height: 3.5rem
+   font-weight: 500
+   color: $lightColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   white-space: nowrap
+   text-transform: uppercase
+   border: 0.1875rem solid $LinkbgHover
+   padding: 1rem 3rem
+   width: auto
+   transition: background .2s 
+   &:hover
+      background-color: $LinkbgHover
+      color: $secondaryColor
+
+
+.addtocart-btn
+   font-family: $fontStack
+   background: lighten($textLink, 28% )
+   font-size: 1.5em
+   line-height: 1rem
+   font-weight: 500
+   color: $secondaryColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   border: 0.1875rem solid $secondaryColor
+   padding: .7rem 2rem
+   width: auto
+   width: 100%
+   white-space: nowrap
+   transition: background .2s
+   cursor: pointer
+   &:hover
+      background-color: $secondaryColor
+      color: $LinkbgHover 
+
+
+.footer-btn
+   font-family: $fontStack
+   font-size: 1.5em
+   line-height: 6rem
+   font-weight: 500
+   color: $secondaryColor
+   box-sizing: border-box
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   border: 0.1875rem solid $secondaryColor
+   padding: 1rem 3.5rem
+   width: auto
+   transition: background .2s 
+   &:hover
+      background-color: $secondaryColor
+      color: $LinkbgHover 
+
+.prev-btn
+   background: none
+   font-family: $subTitleFont
+   font-size: 1.3em
+   line-height: 2rem
+   text-transform: uppercase
+   font-weight: 500
+   padding: 2rem 3rem 2rem 5rem
+   color: $secondaryColor
+   border: 0.1875rem solid $secondaryColor
+   transition: background .3s
+   cursor: pointer
+   position: relative
+   margin: 0 2rem
+   &::before
+      background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+      content: ""
+      display: block
+      position: absolute
+      top: 35%
+      left: 1rem
+      height: 20px
+      width: 20px
+      transform: rotate(90deg)
+   &:hover
+      background: $LinkbgHover
+
+.next-btn
+   background: none
+   font-family: $subTitleFont
+   font-size: 1.3em
+   line-height: 2rem
+   text-transform: uppercase
+   font-weight: 500
+   padding: 2rem 4rem 2rem 3rem
+   color: $secondaryColor
+   border: 0.1875rem solid $secondaryColor
+   transition: background .3s
+   cursor: pointer
+   position: relative
+   margin: 0 2rem
+   &::before
+      background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+      content: ""
+      display: block
+      position: absolute
+      top: 35%
+      right: 1rem
+      height: 20px
+      width: 20px
+      transform: rotate(-90deg)
+   &:hover
+      background: $LinkbgHover
+
+
+.pdp-addtocart-btn
+   background: $CTAbg
+   font-family: $subTitleFont
+   font-size: 1.5em
+   line-height: normal
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   font-weight: 500
+   color: $secondaryColor
+   border: 0.1775rem solid $secondaryColor
+   transition: background .3s
+   cursor: pointer
+   position: relative
+   white-space: nowrap
+   max-width: 100%
+   width: 100%
+   padding: 1.5rem 3rem
+   &:hover
+      background:  $textLink
+
+.add-to-cart
+   background: $CTAbg
+   font-family: $subTitleFont
+   font-size: 1.5em
+   line-height: normal
+   letter-spacing: 0.14em
+   text-transform: uppercase
+   font-weight: 500
+   color: $secondaryColor
+   border: 0.1775rem solid $secondaryColor
+   transition: background .3s
+   cursor: pointer
+   position: relative
+   white-space: nowrap
+   max-width: 100%
+   width: 100%
+   padding: 1.5rem 3rem
+   &:hover
+      background:  $textLink
+
+.wl-btn
+   display: block
+   position: relative
+   background: $wishlistBtn url("../images/heart-active.svg") no-repeat center center
+   background-size: contain
+   border: none
+   width: 2.77rem
+   height: 2.77rem
+   display: block
+   margin-left: .5rem
+   border: 0.1375rem solid $secondaryColor
+   cursor: pointer
+   transition: background .3s
+   &:hover
+      background: $primaryColor url("../images/heart-active.svg") no-repeat center center
+      
+
+
+.wishlist-btn
+   display: block
+   position: relative
+   width: 2.77rem
+   height: 2.77rem
+   input
+      opacity: 0
+      width: 0
+      height: 0
+      display: none
+      &:checked + .fillin
+         background: $primaryColor url("../images/heart-focus.svg") no-repeat center center
+
+   .fillin
+      background: $wishlistBtn url("../images/heart-active.svg") no-repeat center center
+      background-size: contain
+      border: none
+      width: 2.77rem
+      height: 2.77rem
+      display: block
+      margin-left: .5rem
+      border: 0.1375rem solid $secondaryColor
+      cursor: pointer
+      transition: background .3s
+   
+   .fillin_spce
+      margin: 3px 0 0 0 !important
+   
+
+
+/* General Styles */
+.nav
+   background: $lightColor
+   border-bottom: 1px solid #e0e0e0
+   position: fixed
+   top: 0
+   left: 0
+   width: 100vw
+   z-index: 100
+   box-shadow: 0 6px 12px rgba(0,0,0,.100)
+   .nav-top
+      padding: 1.5rem 2.5rem .5rem 2.5rem
+
+   .language
+      width: auto
+      padding: .6rem 1rem
+      border-radius: 4px
+      cursor: pointer
+      transition: .2s
+      position: relative
+      align-self: baseline
+      &:hover
+         background: $LinkbgHover
+
+      .lang-txt
+         font-weight: 800
+         @include flexy
+         @include flexJustifyContentCenter
+         @include flexAlignItemsCenter
+         p
+            font: 800 1rem $menuFont
+      .us-flag
+         background: url("../images/american-flag.svg") no-repeat
+         display: block
+         background-position: center center
+         background-size: contain
+         display: inline-block
+         width: 26px
+         height: 14px
+      .ca-flag
+         background: url("../images/canadian_flag.svg") no-repeat
+         display: block
+         background-position: center center
+         background-size: contain
+         display: inline-block
+         width: 26px
+         height: 14px
+      .lang-arrow
+         background: url("../images/arrowdown-icon.svg") no-repeat
+         width: 10px
+         height: 7px
+         margin-left: .6rem
+      .name-flag
+         display: inline-block
+         margin-right: .3rem
+
+      ul.lang-dropdown
+         display: none
+         background: $lightColor
+         background-clip: padding-box
+         -moz-background-clip: padding-box
+         border-radius: 4px
+         position: absolute
+         min-width: 7rem
+         box-sizing: border-box
+         top: 100%
+         left: 0px
+         z-index: 10
+         border: 1px solid rgba(0,0,0,.15)
+         box-shadow: 0 6px 12px rgba(0,0,0,.175)
+         li
+            border-bottom: 1px solid #c2c2c2
+            white-space: nowrap
+         &:last-child
+            border-bottom: 0px
+         a
+            display: block
+            font: 500 1rem $fontStack
+            padding: 1rem 1.5rem
+            color: $bodyTextColor
+            transition: .3s
+            &:hover
+               background: $primaryColor
+            img
+               margin-left: 8px
+               width: 15px
+
+
+// Logo Styles
+.logo-box
+   width: 100%
+   max-width: 15.75rem
+   margin: 0 auto
+
+// Burger Menu Mobile
+.burger-menu
+   background: none
+   border: 0
+   width: 3rem
+   position: absolute
+   top: 0
+   left: 0
+   padding: 0
+   display: none
+   cursor: pointer
+
+
+// Onscroll Styles =================================
+.onscrollnav
+   transition: all .3s
+   .lang-mobile
+      display: block
+      flex: inherit
+      position: absolute
+      top: 1rem
+      left: 2rem
+      z-index: 10
+   .search-txt
+      display: none
+   .user-txt
+      display: none
+   .nav-bttm
+      display: block
+      position: absolute
+      width: 100%
+      top: 2.7rem
+      left: 50%
+      transform: translate(-50%, -25px)
+      .nav-menu
+         ul 
+            li
+               padding: 0 1.5rem 30px 1.5rem
+      .onscroll-list__right
+         margin-left: 6.5rem
+      .onscroll-list__left
+         margin-right: 11rem
+
+   .cart-box
+      top: 1.8rem
+      right: 4rem
+      width: auto
+      .cart-box__cont
+         .cart-text
+            display: none
+         .cart-icon
+            width: 3em
+
+   .logo-box
+      margin-bottom: 1rem
+      position: relative
+      z-index: 20
+   .search-bar
+      position: absolute
+      right: 190px
+      top: 1.2rem
+      z-index: 20
+      .search-icon
+         width: 1.7rem
+         height: 2.5rem
+         position: absolute
+         right: -1rem
+
+   .signin-create-box
+      position: absolute
+      right: 120px
+      top: 22px
+      width: auto
+      z-index: 20
+      .user-icon
+         width: 3em
+   #nav
+      .nav-top
+         padding: 1.5rem 2.5rem 1.5rem 2.5rem
+
+   .container__top-space
+      padding-top: 5rem
+
+   .fullwidth-mobile
+      display: block
+      flex: 100%
+// End Onscroll Styles =================================
+
+
+// Search Styles
+.search-bar
+   background: none
+   border: 0px
+   color: $bodyTextColor
+   padding: 0 2rem 0 0
+   cursor: pointer
+   .search-icon
+      width: 1.7em
+      height: 1.7em
+      vertical-align: middle
+      margin: 0 .5rem 0 0 
+   .search-txt
+      vertical-align: middle
+      text-transform: uppercase
+      font: 800 1rem $menuFont
+
+
+// Sign and Create Styles
+.signin-create-box
+   color: $bodyTextColor
+   .user-icon
+      width: 2.7em
+      height: 2.7em
+      vertical-align: middle
+      padding-right: 8px
+   .user-txt
+      vertical-align: middle
+      text-transform: uppercase
+      font: 800 1rem $menuFont
+      a
+         color: $bodyTextColor
+         &:hover
+            color: $textLink
+            text-decoration: underline
+
+
+// Navigation Menu Styles
+.nav-bttm
+   padding-top: 1rem
+   position: relative
+
+   .nav-menu
+      ul
+         text-align: center
+         list-style: none
+         position: relative
+         li
+            display: inline-block
+            font-weight: 900 
+            font-family: $menuFont
+            font-size: 1rem 
+            text-transform: uppercase
+            padding: 0 30px 30px 30px
+            &:hover
+               .menu-sub
+                  display: block
+
+            // Main Menu Link         
+            a
+               color: $bodyTextColor
+               padding-bottom: 6px
+               &:hover
+                  border-bottom: 2px solid $bodyTextColor
+
+         // Mega Menu
+         .menu-sub
+            position: absolute
+            box-shadow: 0 6px 12px rgba(0,0,0,0.175)
+            border: 1px solid rgba(0,0,0,0.15)
+            z-index: 2020
+            top: 30px
+            left: 0
+            background: $lightColor
+            width: 100%
+            max-width: 100vw
+            padding: 2.5rem 8%
+            display: none
+            text-align: left
+            ul
+               text-align: left
+               li
+                  display: block
+                  padding: 0 0 0 0
+
+            .menu-sub_flex
+               @include flexy
+               .menu-sub__list
+                  padding: 0 3.5rem
+                  width: auto
+                  h4
+                     font-family: $menuFont
+                     color: $bodyTextColor
+                     font-size: 1.3rem
+                     line-height: normal
+                     margin-bottom: 1.3rem
+                     a
+                        &:hover
+                           border-bottom: 0
+                           color: $textLink
+                  ul
+                     li
+                        font-family: $bodyFontlight
+                        color: $bodyTextColor
+                        font-size: 1.2rem
+                        line-height: normal
+                        text-transform: capitalize
+                        a
+                           padding: 8px 0
+                           display: inline-block
+                           &:hover
+                              border-bottom: 0
+                              color: $textLink
+                              
+
+// Cart icon section Styles
+.cart-box
+   color: $bodyTextColor
+   width: 6.5rem
+   position: absolute
+   top: 5.6rem
+   right: 2%
+   @include flexy
+   @include flexJustifyContentEnd
+   z-index: 10
+   .cart-box__cont
+      display: inline-flex
+      position: relative
+      .counter
+         background: $primaryColor
+         border-radius: 50%
+         text-align: center
+         font-size: 1em
+         width: 25px
+         height: 25px
+         position: absolute
+         top: -15px
+         left: 22px
+         padding-top: 6px
+         letter-spacing: 0
+      .cart-icon
+         width: 3.5em
+         vertical-align: middle
+         margin-right: 10px
+      span
+         vertical-align: middle
+         text-transform: uppercase
+         font: 800 1rem $menuFont
+         margin-top: 5px
+
+
+// Hero Banner Styles
+.hero-banner
+   background: $lightColor
+   line-height: 0
+   align-items: center
+   display: grid
+   grid-template-areas: "a a"
+   grid-template-columns: 1fr 1.5fr
+   grid-template-rows: 1fr
+   max-width: 100vw
+   width: 100%
+   margin-top: 25px
+
+   // Hero image
+   .hero-banner__img
+      grid-area: a
+      position: relative
+      width: 100%
+      img
+         width: 100%
+         max-width: 100%
+         line-height: 0
+
+   // Hero Content
+   .hero-banner__content
+      align-self: center
+      grid-area: 1/2/1/2
+      margin: -55px auto 0 auto
+      position: relative
+      text-align: center
+      padding: 0 1rem
+      width: 70rem
+
+   .hero-banner__content-m
+      align-self: center
+      grid-area: 1/2/1/2
+      margin: -25px auto 0 auto
+      position: relative
+      text-align: center
+      padding: 0 1rem 0 1rem
+      width: 40rem
+      h1
+         text-align: left
+
+
+// Shipping Module
+.shipping-module
+   background: $secondaryColor
+   padding: 3rem 4rem
+
+
+// Shop All Products Blocks
+.supporting-banner-block
+   picture
+      width: 100%
+      img
+         width: 100%
+         padding: 10px
+   .dscptn_blck
+      position: absolute
+      text-align: center
+      top: 10%
+      width: 100%
+      box-sizing: border-box
+      padding: 0 3rem
+
+
+// Product Carousel Styles
+.carousel-main
+   width: 100%
+   max-width: 100%
+   margin: 0 auto 0 auto
+   box-sizing: border-box
+
+   .slider
+      margin: 100px auto
+   .slick-slide
+      margin: 0px 10px
+      transition: all ease-in-out .3s
+
+   // Slider Arrow
+   .slick-prev
+      left: -18px
+      &:before
+         background: url('../images/arrowleft-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 40px
+         height: 40px
+         transition: opacity .3s
+   .slick-next
+      right: -22px
+      &:before
+         background: url('../images/arrowright-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 40px
+         height: 40px
+         transition: opacity .3s
+
+   .slick-active
+      opacity: 1
+   .slick-current
+      opacity: 1
+  
+   div
+      // Produxt item Styles
+      @include productList
+
+
+
+// Signup Block
+.signup-block
+   background: $tertiaryColor
+   position: relative
+   width: 100%
+   max-width: 100vw
+   line-height: 0
+   margin-top: 6rem
+   @include flexy
+   @include flexAlignContentCenter
+   @include flexJustifyContentCenter
+   picture
+      width: 100%
+      max-width: 100%
+      img
+         width: 100%
+         max-width: 100%
+   .signup-block__content
+      position: absolute
+      top: 30%
+      right: 10%
+      width: 40rem
+      text-align: center
+      span
+         margin-bottom: 8x
+      p
+         font-size: 1rem
+         margin-top: .5rem
+
+.signup-block__stip
+   background: $subBgColor
+   padding: 2.3rem
+   text-align: center
+
+
+// Modal Search Form
+.search-background
+   display: none
+.modalsearch
+   background: $lightColor
+   padding: 1rem 20rem
+   max-width: 100vw
+   width: 100%
+   position: fixed
+   top: 0
+   left: 0
+   z-index: 250
+   display: none
+   .modalsearch_case
+      @include flexy
+      @include flexAlignItemsCenter
+      .modalsearch_btn
+         background: none
+         border: none
+         box-sizing: border-box
+         cursor: pointer
+         margin-right: 3rem
+         img
+            width: 2rem
+      .modalsearch_inputfield
+         flex: 1
+         font-family: $fontStack
+         background: transparent
+         line-height: 3rem
+         font-size: 1.8rem
+         border: 0
+         border-bottom: 1px solid $subBgColor
+         &::Placeholder
+            color: $subBgColor
+         &::focus
+            border: none
+            
+   .modalsearch_close
+      background: none
+      border: none
+      box-sizing: border-box
+      cursor: pointer
+      margin-left: 3rem
+      img
+         width: 1.4rem
+         
+
+.search-background
+   position: fixed
+   top: 0
+   left: 0
+   right: 0
+   bottom: 0
+   background-color: rgba(0,0,0,0.4)
+   opacity: 1
+   z-index: 200
+
+
+// Accordion Shop By
+.accordon-container
+   padding: 2rem 0
+   display: none
+   .accordion-wrap__title
+      font-family: $titleFont
+      color: $darkColor
+      font-size: 1.3rem
+      padding: 1rem 4rem 2rem 4rem
+   .accordion-wrap
+      .accordion-header
+         border-top: .125rem solid $LinkbgHover
+         font-family: $subTitleFont
+         font-size: 1.2rem
+         padding: 1.2rem 4rem
+         text-transform: uppercase
+         position: relative
+         cursor: pointer
+         &::before
+            background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+            content: ""
+            display: block
+            width: 10px
+            height: 10px
+            position: absolute
+            top: 36%
+            right: 35px
+      .accordion-content
+         font-family: $fontStack
+         font-size: 1.2rem
+         text-transform: uppercase
+         height: 0px
+         overflow: hidden
+         transition: all .3s ease
+         ul
+            padding: 1.2rem 3rem 2rem
+            li
+               a
+                  color: $darkColor
+                  display: block
+                  padding: .6rem 0 .6rem 2rem
+                  &:hover
+                     color: $textLink
+
+      .accord-active
+         background: $LinkbgHover
+         &::before
+            transform: rotate(180deg)
+         +
+            .accordion-content
+               height: auto    
+
+
+
+// Footer Styles
+#footer
+   background: $tertiaryColor url("../images/footer_wave.svg") no-repeat center bottom
+   padding: 4rem 0
+
+.footer__copyright
+   padding-top: 3rem
+   .footer__flexy
+      @include flexy
+
+      .footer__copyright--left
+         width: 70%
+         .footer__info
+            font-family: $fontStack
+            color: $headerTextColor
+            font-weight: 400
+            font-size: 0.875rem
+            line-height: 1.375em
+            text-align: center
+            padding-bottom: 1rem
+            a
+               color: $headerTextColor
+               &:hover
+                  color: $textLink
+                  text-decoration: underline
+
+      .footer__copyright--right
+         width: 30%
+         text-align: right
+         .footer-logo
+            text-align: right
+            img
+               width: 100%
+               max-width: 15rem
+               
+         .social-links
+            margin-top: 30px
+            ul
+               li
+                  display: inline-block
+                  margin-left: 2rem
+                  a
+                     img
+                        width: 3rem
+                        height: 3rem
+
+
+// Mobile navigation menu Styles 
+.mo-nav
+   background: $lightColor
+   border: .125rem solid $secondaryColor
+   position: absolute
+   top: 0
+   left: 0
+   z-index: 260
+   padding: 3rem 0 4rem 0
+   max-width: 80%
+   width: 100%
+   display: none
+   .mo-sublink
+      padding: 0
+      li
+         border-bottom: .125rem solid $LinkbgHover
+         font-family: $subTitleFont
+         color: $headerTextColor
+         text-transform: uppercase
+         font-size: 1.3rem
+         a
+            display: block
+            color: $headerTextColor
+            padding: 1rem 3rem
+            position: relative
+            &::before
+               background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+               content: ""
+               display: block
+               width: 10px
+               height: 10px
+               position: absolute
+               top: 36%
+               right: 5%
+               transform: rotate(-95deg)
+
+   .mo-sublink__bttm
+      padding: 3rem 0 0 0
+      li
+         font-family: $subTitleFont
+         color: $headerTextColor
+         text-transform: uppercase
+         font-size: .9rem
+         border-bottom: .125rem solid $LinkbgHover
+         a
+            display: block
+            color: $headerTextColor
+            padding: .9rem 3rem
+            position: relative
+            &::before
+               background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+               content: ""
+               display: block
+               width: 10px
+               height: 10px
+               position: absolute
+               top: 36%
+               right: 33px
+               transform: rotate(-95deg)
+         &:last-child
+            border-bottom: none
+
+
+
+   .mo-close
+      background: none
+      border: none
+      box-sizing: border-box
+      cursor: pointer
+      padding: 0px
+      padding: 0 0 1rem 3rem
+      img
+         width: 1.4rem
+
+   .mo-user-login
+      @include flexy
+      @include flexAlignItemsCenter
+      padding: 2rem 3rem
+      .mo-usericon
+         width: 2rem
+         margin-right: 10px
+      .mo-create-accnt
+         font-family: $titleFont
+         color: $headerTextColor
+         text-transform: uppercase
+         font-weight: 400
+         font-size: 1.3rem
+         white-space: nowrap
+         a
+            color: $headerTextColor
+
+
+.mo-nav__wrap
+   .mo-accordion__wrap
+      border-bottom: .125rem solid $LinkbgHover
+      font-family: $fontStack
+      color: $headerTextColor
+      text-transform: uppercase
+      font-weight: 400
+      font-size: 1.3rem
+   
+      .mo-accordion__title
+         font-family: $subTitleFont
+         position: relative
+         padding: 1rem 3rem
+         cursor: pointer
+         &::before
+            background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+            content: ""
+            display: block
+            width: 10px
+            height: 10px
+            position: absolute
+            top: 44%
+            right: 5%
+      .mo-accordion__list
+         height: 0
+         overflow: hidden
+         .mo-accordion__list--sub
+            padding: 0.7rem 3rem 0.7rem 5rem
+            @include flexy
+            cursor: pointer
+            span
+               flex: 100%
+            img
+               width: 10px
+               display: inline
+               justify-content: flex-end
+
+         .mo-accordion__list--sub-active
+            background: $LinkbgHover
+            +
+               .mo-list-sub
+                  height: auto
+
+         .mo-list-sub
+            height: 0
+            overflow: hidden
+            li
+               line-height: 2rem
+               a
+                  color: $bodyTextColor
+                  display: block
+                  padding: .5rem 7rem
+                  &:hover
+                     background: $textLink
+
+      .mo-accordion__title--active
+         background: $LinkbgHover
+         +
+            .mo-accordion__list
+               height: auto
+
+
+
+// Category Page Styles
+.categody-wrap__left
+   width: 80%
+   @include flexy
+   @include flexJustifyContentStart
+   @include flexDirectionColumn
+.categody-wrap__right
+   width: 20%
+   @include flexy
+   align-items: flex-end
+   @include flexDirectionColumn
+.filter-holder
+   @include flexy
+.selectbox
+   position: relative
+   margin: 0 0.2rem
+   z-index: 10
+   .selectbox-btn
+      @include selectButton
+
+   .selectbox__option
+      background: $lightColor
+      background-clip: padding-box
+      max-height: 30rem
+      overflow-y: auto
+      min-width: 211px
+      margin: 2px 0 0
+      font-size: 14px
+      text-align: left
+      border: 1px solid rgba(0,0,0,.15)
+      border-radius: 4px
+      box-shadow: 0 6px 12px rgba(0,0,0,.175)
+      position: absolute
+      top: 100%
+      left: 0px
+      display: none
+      li
+         padding: 1rem 0.5re
+         font-size: .85rem
+         letter-spacing: 0.14rem
+         line-height: 2rem
+         text-transform: uppercase
+         border-bottom: 0.125rem solid #c2c2c2
+         padding: 1rem 0.5rem
+         overflow-wrap: break-word
+         text-align: center
+         cursor: pointer
+         &:hover
+            background: $primaryColor
+         &:last-child
+            border-bottom: 0
+
+   .selectbox-btn__active
+      display: block
+
+      
+.category__holder
+   @include flexy
+   flex-direction: row
+   justify-content: flex-start
+   flex-wrap: wrap
+   height: 100%
+
+.fs-holer
+   width: 100%
+   @include flexy
+   justify-content: space-between
+   visibility: hidden
+   opacity: 0
+   height: 0
+   width: 0
+   .filter-btn
+      flex: 1
+      @include selectButton
+   .sort-btn
+      flex: 1
+      @include selectButton
+
+.category__holder--list
+   flex-basis: 25%
+   padding: 0 1rem 6rem 1rem
+   // Produxt item Styles
+   @include productList
+
+.dropdown-filter
+   display: none
+.dropdown-sort
+   display: none
+
+.hide-blocks
+   opacity: 0
+   height: 0
+   width: 0
+   visibility: hidden
+
+.selectbox 
+   .md-right
+      left: -40%
+      
+.prevnext-case
+   margin-bottom: 7rem
+
+.focus-bg
+   background: $tertiaryColor !important
+   
+
+// Product Page Styles
+.pdp-wrapper
+   box-sizing: border-box
+   width: 100%
+   max-width: 1100px
+   margin: 0 auto
+   padding: 5rem 2rem 0rem 2rem
+   &::after
+      content: ""
+      display: block
+      clear: both
+   
+   .pdp-content
+      float: right
+      clear: right
+      width: 52%
+      .breadcramb
+         font-family: $subTitleFont
+         font-size: .8rem
+         font-style: italic
+         text-transform: uppercase
+         margin-bottom: 2rem
+         a
+            color: $bodyTextColor
+      .pdp-heading
+         @include flexy
+         font-family: $subTitleFont
+         font-size: 1rem
+         background-color: transparent
+         text-transform: uppercase
+         font-weight: bold
+         font-style: italic
+         padding-left: 0
+         line-height: 2.25
+         position: relative
+         &::before
+            content: ""
+            background: #c2c2c2
+            flex: 1
+            order: 3
+            height: 1px
+            align-self: flex-end
+            -webkit-align-self: flex-end
+         span
+            order: 1
+            background: #efefef
+            padding-left: 2rem
+            min-width: 30%
+         &::after
+            content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0"
+            background-image: linear-gradient(50deg,#efefef 40%,transparent 40%,transparent 50%,#b5cced 50%,#b5cced 70%,transparent 70%,transparent 100%)
+            height: 100%
+            position: relative
+            flex: 0
+            order: 2
+
+      .product-name
+         font-family: $subTitleFont
+         font-size: 3rem
+         line-height: 1.36em
+         font-weight: 500
+         margin: .7em 0 0
+         letter-spacing: 0
+      
+      .description
+         font-family: $fontStack
+         font-weight: 400
+         font-size: 1.625rem
+         line-height: 1.46em
+         letter-spacing: 0
+         margin: 0 0 1rem
+
+      .reviews-and-price
+         @include flexy
+         @include flexAlignItemsCenter
+         margin-bottom: 2rem
+         .addtowishlist-ratings
+            border-right: 0.0625em solid $subBgColor
+            margin-right: 2.5em
+            display: inline-block
+            max-height: 2rem
+            padding-right: 2rem
+            @include flexy
+            @include flexAlignItemsCenter
+            .pdp-stars
+               font-family: $titleFont
+               font-size: 1.7rem
+               padding: 0 1rem 0 1.2rem
+            .pdp-counter
+               font-weight: 500
+               font-size: 1rem
+
+         .pdp-price
+            font-family: $titleFont
+            font-weight: 500
+            font-size: 1.2rem
+
+      .product-size
+         font-family: $fontStack
+         font-size: 1.3rem
+         line-height: 1.46em
+         letter-spacing: 0
+         margin-bottom: 1.5rem
+      .ideal-for-label
+         font-family: $fontStack
+         font-size: 1rem
+         line-height: 1.46em
+         letter-spacing: 0
+         margin-bottom: 1.5rem
+      .form-row
+         @include flexy
+         @include flexJustifyContentCenter
+         flex-direction: column
+         position: relative
+         .rb-one
+            margin-bottom: .6em
+            input
+               vertical-align: middle
+               width: 1.2rem
+               height: 1.3rem
+            .subs-save-option, .au-list
+               font-family: $fontStack
+               font-size: 1.3rem
+               vertical-align: middle
+               position: relative
+               top: -3px
+               a
+                  display: inline-block
+
+            .free-shipping-subs
+               font-family: $bodyFontitalic
+               display: inline-block
+               font-size: 14px
+            i.info-icon
+               background: url("../images/info-icon.svg") no-repeat 0 0
+               display: block
+               width: 1rem
+               height: 1rem
+               background-size: cover
+               display: inline-block
+               cursor: pointer
+
+
+      .quantity
+         @include flexy
+         @include flexJustifyContentCenter
+         @include flexAlignItemsCenter
+         .qty-txt
+            font-family: $subTitleFont
+            font-size: 1.2rem
+            vertical-align: middle
+            margin-right: 1rem
+         .qty-select
+            position: relative
+            background: $CTAbg url('../images/arrowdown-icon.svg') no-repeat 80% 48%
+            background-size: 15px
+            width: 6rem
+            select
+               background: transparent
+               vertical-align: middle
+               border: 0.1775rem solid $secondaryColor
+               border-radius: 0
+               width: 6rem
+               height: 3.4rem
+               font-size: 1.5rem
+               -webkit-appearance: none
+               -moz-appearance: none
+               appearance: none
+               padding: 0 0 0 1.4rem
+               position: relative
+
+
+      .addtocart-section
+         padding-top: 4.5rem
+         margin: 0 auto
+         .guarantee-statement
+            display: block
+            font-family: $fontStack
+            text-align: center
+            line-height: 1.2rem
+            padding: 1rem
+            max-width: 20rem
+            margin: 0 auto
+
+
+      .pdp-features-benefits
+         padding: 3rem 0 0 0
+         h4
+            font-size: 2rem
+         span
+            display: block
+            padding: 0.3rem 0 .5rem 0
+
+
+   .pdp-images
+      float: left
+      position: relative
+      padding-top: 3.5rem
+      width: 40%
+      .pdp-images__main
+         display: block
+         position: relative
+         overflow: hidden
+         height: 40em
+         img
+            width: 100%
+            transform-origin: 50% 65%
+            transition: transform 0.5s, filter 2s ease-in-out
+            &:hover
+               transform: scale(1.2)
+
+      .pdp-images__thumbnail
+         padding-top: 2rem
+         ul
+            @inlcude flexy
+            li
+               display: inline-block
+               list-style: none
+               position: relative
+               width: 123px
+               height: 123px
+               position: relative
+               overflow: hidden
+               border: 2px solid $subBgColor
+               cursor: pointer
+               img
+                  width: 100%
+               &:hover
+                  border-color: $textLink
+
+
+.nice-ifo
+   background: $lightColor
+   box-sizing: border-box
+   padding: 2rem
+   border: 1px solid #afafaf
+   box-shadow: 0 0 1em #afafaf
+   width: 350px
+   position: absolute
+   top: -5rem
+   left: 5rem
+   z-index: 10
+   display: none
+   .nice-info__inner
+      position: relative
+      .close-info
+         position: absolute
+         top: -1em
+         right: -1em
+         padding: 0
+         border: 0
+         background: transparent
+         width: 1rem
+         cursor: pointer
+      .hw-subhead
+         font-size: 1em
+         font-family: $titleFont
+         margin: .8rem 0 0 0
+      .hw-list
+         padding-left: 1rem
+         margin-top: 1rem
+         li
+            font-size: 1em
+            line-height: 1.4em
+
+
+
+.tab-container
+   .nav-tab
+      font-size: 1.5rem
+      text-transform: uppercase
+      padding-bottom: 3rem
+      li
+         display: inline-block
+         border-right: 0.0625em solid $subBgColor
+         padding-right: 1.3rem
+         margin-right: 1.3rem
+         letter-spacing: 0
+         cursor: pointer
+         margin-bottom: 18px
+         &:last-child
+            border-right: 0
+         span
+            color: $bodyTextColor
+         .active-tab
+            font-family: $menuFont
+            font-style: italic
+            border-bottom: 2px solid $primaryColor
+            padding-bottom: .5rem
+
+   // PDP Tab
+   .tab-details-1, .tab-details-2
+      display: none
+   .tab-space 
+      padding-bottom: 120px
+   .howtoapply-holder
+      @include flexy
+      .vid-case
+         flex: 1
+      .vid-copy
+         flex: 1
+         padding: 40px
+
+
+.pdp-review-contaner
+   padding: 8rem 0 6rem 0
+   .review-summary
+      padding-top: 3rem
+   .ratings-total
+      padding-top: 3rem
+
+.pdpImageSlider
+   .slider
+      margin: 100px auto
+   .slick-slide
+      margin: 0px 10px
+      transition: all ease-in-out .3s
+
+   // PDP slide thumbnail
+   .slick-prev
+      left: -18px
+      top: 44%
+      &:before
+         background: url('../images/arrowleft-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 20px
+         height: 30px
+         transition: opacity .3s
+   .slick-next
+      right: -24px
+      top: 44%
+      &:before
+         background: url('../images/arrowright-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 20px
+         height: 30px
+         transition: opacity .3s
+
+   .slick-active
+      opacity: 1
+   .slick-current
+      opacity: 1
+
+
+.histogram-ratings
+   width: 62%
+   padding-top: 2rem
+   .histogram-ratings__box
+      @include flexy
+      @include flexAlignItemsCenter
+      font-family: $subTitleFont
+      font-size: 1rem
+      padding-top: .2rem
+      .hrbox-1
+         width: 30px
+      .hrbox-2
+         @include flexy
+         @include flexAlignItemsCenter
+         padding: 0 2rem 0 .6rem
+         .percent-block
+            border-radius: 2px
+            box-shadow: inset 0 0 2px rgba(0,0,0,.25)
+            display: block
+            background-color: #ebebeb
+            width: 200px
+            height: 10px
+            position: relative
+            .percentage
+               background-image: -webkit-linear-gradient(top,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 100%)
+               background-color: #4e5458
+               height: 10px
+               &--5
+                  @extend .percentage
+                  width: 100%
+               &--4
+                  @extend .percentage
+                  width: 80%
+               &--3
+                  @extend .percentage
+                  width: 60%
+               &--2
+                  @extend .percentage
+                  width: 40%
+               &--1
+                  @extend .percentage
+                  width: 20%
+               &--0
+                  @extend .percentage
+                  width: 0%
+      .hrbox-3
+         text-align: center
+
+
+.reviews-head
+   background: #f7f7f7
+   padding: .5rem .7rem
+   @include flexy
+   .reviews-head__left
+      width: 50%
+      @include flexy
+      @include flexJustifyContentStart
+      @include flexAlignItemsCenter
+   .reviews-head__right
+      width: 50%
+      @include flexy
+      @include flexJustifyContentEnd
+      @include flexAlignItemsCenter
+   .reviews-head__title
+      font-size: 1.3rem
+      letter-spacing: 0
+   .sortby
+      .sortby__lr
+         font-size: 1.3rem
+         letter-spacing: 0
+         margin-right: 1rem
+         white-space: nowrap
+         cursor: pointer
+         &::after
+            background: url("../images/arrowleft-icon.svg") no-repeat 0 0
+            content: ''
+            display: inline-block
+            background-size: cover
+            width: 10px
+            height: 10px
+            transform: rotate(45deg)
+            margin: 0 10px 0 
+            position: relative
+            top: -5px
+
+   .filter-control
+      border: 0
+      padding: 0
+      margin: 0
+      width: 36px
+      height: 32px
+      cursor: pointer
+      border-radius: 4px
+      margin-left: 3px
+      img
+         width: 32px
+      &:hover
+         background: #DDDDDD
+
+   .sortby
+      @include flexy
+      @include flexJustifyContentStart
+
+
+.review-summary-md
+   padding: 3rem 0 3rem 0
+   @include flexy
+   .review-summary__lt
+      width: 20%
+      padding-right: 1rem
+      box-sizing: border-box
+      .listoff
+         padding-top: .5rem
+         li
+            font-size: 1rem
+            line-height: 1.4rem
+   .review-summary__rt
+      width: 80%
+
+      .review-summary__rt--cont
+         @include flexy
+         .name-cmmt
+            width: 50%
+         .vrfd-cmmt
+            width: 50%
+            @include flexy
+            @include flexJustifyContentEnd
+         .rt-cont-commnt
+            font-size: 1rem
+            line-height: 1.5rem
+            width: 70%
+            padding: .7rem 2rem 1rem 0
+         .rs-inner-lt
+            width: 70%
+            padding: 1rem 2rem 2rem 0
+            h5
+               img
+                  display: inline-block
+                  width: 1rem
+                  vertical-align: middle
+            .posted-blocks
+               padding: .6rem
+               background: $tertiaryColor
+               font-size: 1rem
+               width: 100%
+               display: block
+               margin: 1rem 0 0 0
+         .rs-inner-rt
+            width: 30%
+            @include flexy
+            @include flexJustifyContentEnd
+            .bars-holder
+               h5
+                  font-size: 1.3rem
+                  padding-right: 1rem
+            
+            .bars-qp
+               line-height: 0
+               margin-bottom: 1rem
+               li
+                  background: #656B6E
+                  display: inline-block
+                  margin: 0 -3px 0 0
+                  width: 19%
+                  height: 7px
+               .bars-qp_empty
+                  background: $subBgColor
+
+
+         .rs-inner-lt__title
+            display: inline-block
+            font-size: 1rem
+            width: 70%
+            margin-bottom: 1rem
+            .star-mth
+               font-size: 1.5rem
+         
+         .vfied-txt
+            font-size: 1rem
+            img
+               width: .8rem
+               display: inline-block
+               vertical-align: middle
+            p
+               display: inline-block
+
+         .feedback-vote-request
+            li
+               display: inline-block
+               font-size: 1rem
+               a
+                  background: $tertiaryColor
+                  font-family: $subTitleFont
+                  border-radius: 6px
+                  padding: .2rem 1rem
+                  font-size: 1.3rem
+                  color: $bodyTextColor
+                  transition: background .3s
+                  &:hover
+                     background: #DCDCDC
+
+
+            
+
+.banner-stripe
+   background: #494a49
+   padding: 14px 60px
+   box-sizing: border-box
+   position: relative
+   color: $lightColor
+   text-align: center
+   z-index: 200
+   font-size: 1.1rem
+   width: 100%
+   font-weight: 800
+   position: fixed
+   .strp-close
+      width: 20px
+      position: absolute
+      top: 30%
+      right: 30px
+
+.banner-stripe-space
+   top: 44px
+.banner-spacing
+   margin-top: 80px
+
+
+.hero__container_people
+   margin: 120px 0 20px 0
+   a
+      picture
+         img
+            width: 100%
+            max-width: 100%
+
+
+
+.contact-holder
+   ul
+      @include flexy
+      align-items: flex-start
+      li
+         width: 100%
+         .contact-dtl
+            color: $secondaryColor
+            @include flexy
+            align-items: flex-start
+            display: block
+            text-align: center
+            padding: 7rem 5rem 7rem 5rem
+            h3
+               margin-bottom: 20px
+            .i-icon
+               width: 90px
+               margin: 0 auto 1.5rem auto
+               display: table
+            .c-icon
+               width: 90px
+               margin: 0 auto 1.5rem auto
+               display: table
+            .m-icon
+               width: 90px
+               margin: 0 auto 1.5rem auto
+               display: table
+            .c-title
+               font-size: 30px
+            span
+               font-size: 1.2rem
+               text-align: center
+               display: inline
+               
+
+
+
+.share-block
+   padding-bottom: 2rem
+   img
+      width: 100%
+
+
+                  
+// Custom radio button
+.radio-cont 
+   display: block
+   position: relative
+   padding-left: 35px
+   margin-bottom: 12px
+   cursor: pointer
+   font-size: 22px
+   -webkit-user-select: none
+   -moz-user-select: none
+   -ms-user-select: none
+   user-select: none
+   input
+      position: absolute
+      opacity: 0
+      cursor: pointer
+      height: 0
+      width: 0
+      &:checked ~ .checkradio
+         background: url('/images/radio-click.svg') no-repeat
+         
+   .checkradio
+      position: absolute
+      top: 0
+      left: 0
+      height: 20px
+      width: 20px
+      background: url('/images/radio-empty.svg') no-repeat
+      border-radius: 50%
+
+   &:hover
+      input ~ .checkradio
+         background-color: #eee
+
+
+.main-result-holder
+   max-width: 620px
+   width: 100%
+   position: relative
+   .before-txt
+      position: absolute
+      left: 0px
+      bottom: 200px
+      font-size: 1.2rem
+   .after-txt
+      position: absolute
+      right: 0px
+      bottom: 200px
+      font-size: 1.2rem
+
+.ResultSlider
+   max-width: 620px
+   min-height: 608px
+   width: 100%
+   box-sizing: border-box
+   li
+      img
+         width: 100%
+      .results-title
+         font-size: 1.2rem
+         line-height: 1.5em
+         font-family: $titleFont
+         margin: 90px 0 15px 0
+         padding: 0px 40px
+         text-align: center
+      .results-copy
+         font-size: 1rem
+         line-height: 1.6em
+         text-align: center
+         padding: 0px 40px
+   
+   // PDP slide thumbnail
+   .slick-prev
+      left: -55px
+      top: 28%
+      &:before
+         background: url('../images/arrowleft-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 26px
+         height: 60px
+         transition: opacity .3s
+   .slick-next
+      right: -50px
+      top: 28%
+      &:before
+         background: url('../images/arrowright-icon.svg') no-repeat
+         content: ''
+         display: block
+         width: 26px
+         height: 60px
+         transition: opacity .3s
+
+   // Dots
+   .slick-dots
+      bottom: 200px
+      li
+         button
+            &::before
+               content: ''
+               background: #8dabcb
+               border: 1px solid #585f63
+               width: 20px
+               height: 20px
+               border-radius: 50%
+
+   .slick-active
+      opacity: 1
+   .slick-current
+      opacity: 1

@@ -1,0 +1,195 @@
+// Layout Mixins =================================================
+// Clear Both
+@mixin clrfix
+  &:after
+    display: block
+    content: ""
+    clear: both
+
+// Display Flex
+@mixin flexy
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+// Flex Direction Column
+@mixin flexDirectionColumn
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+
+// Flex Direction Row
+@mixin flexDirectionRow
+  -webkit-flex-direction: row
+  -ms-flex-direction: row
+  flex-direction: row
+
+// Flex Align Items Center
+@mixin flexAlignItemsCenter
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+// Flex Content Align Center
+@mixin flexAlignContentCenter
+  align-content: center
+
+@mixin flexJustifyContentCenter
+  -webkit-justify-content: center
+  justify-content: center
+
+// justify-content: flex-start
+@mixin flexJustifyContentStart
+  -webkit-justify-content: flex-start
+  justify-content: flex-start
+ 
+// justify-content: flex-start
+@mixin flexJustifyContentEnd
+  -webkit-justify-content: flex-end
+  justify-content: flex-end
+
+
+// Product items ==========================================
+@mixin productList
+  .cat-list
+    .carousel-img__holer
+      display: block
+      position: relative
+      overflow: hidden
+      img.item-pic
+          width: 100%
+          transform-origin: 50% 65%
+          transition: transform 0.5s, filter 2s ease-in-out
+          &:hover
+            transform: scale(1.2)
+
+    .pdp-txt
+      color: $headerTextColor
+      display: block
+      margin: 1.2rem 0 0 0
+      font: bold 1rem $bodyFontitalic
+      font-style: italic
+      letter-spacing: 0.025em
+      text-transform: uppercase
+    .prdct-listing__title
+      color: $headerTextColor
+      display: block
+      font: 700 1.375rem/normal $titleFont
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      text-decoration: none
+      padding: .5rem 0
+      &:hover
+          color: $textLink
+          text-decoration: underline
+
+    .short-desc
+      color: $headerTextColor
+      display: block
+      letter-spacing: 0.025em
+      font: 400 1.31rem/1.8rem $fontStack
+
+    // Ratings
+    .cont-wrap
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      align-items: center
+      padding-top: 2rem
+      ul.ratings-holder
+          list-style: none
+          color: $bodyTextColor
+          letter-spacing: 0.025em
+          width: 70%
+          display: flex
+          align-items: center
+          li.rating-star
+            font: 700 1.6rem $fontStack
+            display: inline-block
+            position: relative
+            margin-right: 10px
+            a
+              color: $bodyTextColor
+              text-decoration: none
+              position: relative
+              top: -.2rem
+          li.rating-number
+            display: inline-block
+            font: 700 1.3rem $titleFont
+            a
+              color: $bodyTextColor
+          li.rating-count
+            font: 700 1.3rem $titleFont
+            display: inline-block
+            a
+              color: $bodyTextColor
+
+      .item-price
+          color: $bodyTextColor
+          letter-spacing: 0.025em
+          width: 30%
+          font: 800 1.3rem $titleFont
+          text-align: right
+
+    // Wishlist and CTA
+    .cont-wrap-bttm
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      -webkit-justify-content: center
+      justify-content: center
+      -webkit-align-items: center
+      -ms-flex-align: center
+      align-items: center
+
+    .cont-holder__lft
+      padding-top: 10px
+
+    .cont-holder__ryt
+      padding-top: 10px
+      width: 100%
+
+
+// Select button ==================================
+@mixin selectButton
+  background: $lightColor
+  font-family: $subTitleFont
+  font-size: 1.3em
+  line-height: 2rem
+  text-transform: uppercase
+  font-weight: 500
+  padding: 1rem 5rem 1rem 3rem
+  color: $secondaryColor
+  border: 0.1875rem solid $secondaryColor
+  transition: background .3s
+  cursor: pointer
+  position: relative
+  white-space: nowrap
+  &::before
+    background: url('../images/arrowdown-icon.svg') no-repeat 0 0
+    content: ""
+    display: block
+    position: absolute
+    top: 40%
+    right: 2rem
+    height: 10px
+    width: 10px
+  &:hover
+      background: $LinkbgHover
+
+
+// Next Prev BUtton button ==================================
+@mixin nexPrevButton
+  background: none
+  font-family: $subTitleFont
+  font-size: 1.3em
+  line-height: 2rem
+  text-transform: uppercase
+  font-weight: 500
+  padding: 2rem 3rem 2rem 5rem
+  color: $secondaryColor
+  border: 0.1875rem solid $secondaryColor
+  transition: background .3s
+  cursor: pointer
+  position: relative
+  white-space: nowrap
